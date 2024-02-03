@@ -1,5 +1,10 @@
 import Products from "../components/Products/Products"
 
+export const metadata = {
+    title: "Our Products",
+    description: "Explore our different products with categories.",
+};
+
 const page = () => {
   return (
     <div className="page-body">

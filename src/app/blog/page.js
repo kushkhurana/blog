@@ -1,5 +1,10 @@
 import Blog from "../components/blog"
 
+export const metadata = {
+  title: "Our Blog",
+  description: "You will get daily latest blog on our blog page.",
+};
+
 const page = () => {
   return (
     <div className="page-body">

@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+    title: "About Us",
+    description: "We provide marketing, IT & software solution services.",
+};
+
 const page = async () => {
     const bannerUrl = "/banners/about.jpg";
     // console.log(data);
