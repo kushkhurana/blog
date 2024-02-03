@@ -1,0 +1,10 @@
+.posts{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:2rem;
+}
+.posts .post-item{
+    width:calc(33% - 2rem);
+    margin-right:2rem;
+    margin-bottom:2rem;
+}

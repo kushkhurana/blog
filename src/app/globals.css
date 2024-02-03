@@ -1,0 +1,19 @@
+body,ul{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+.page-title{
+    font-size:2rem;
+}
+
+.page-body{
+    padding:0 2rem;
+}
+
+.banner-image{
+    max-height: 300px;
+    overflow: hidden;
+}

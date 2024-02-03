@@ -1,0 +1,17 @@
+.header{
+    background-color: rgb(241, 237, 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+.header ul{
+    list-style: none;
+    display:flex;
+}
+.header ul li a{
+    display:inline-block;
+    text-decoration: none;
+    padding:1rem;
+    font-weight: 600;
+}
