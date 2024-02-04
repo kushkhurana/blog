@@ -1,14 +1,23 @@
+"use client"
 import Link from "next/link"
+import { usePathname } from "next/navigation";
+import headerMenu from "./header-data"
 import "./header.css"
 const Header = () => {
+  const headerData = headerMenu;
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <header className="header">
         <h3>Next App</h3>
         <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/products">Products</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
+          {
+            headerData.map((item) => {
+              return <li className={(item.path === pathname) ? 'active' : ''} key={item.label}>
+                <Link href={item.path}>{item.label}</Link>
+              </li>
+            })
+          }
         </ul>
     </header>
   )

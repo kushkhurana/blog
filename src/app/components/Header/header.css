@@ -15,3 +15,8 @@
     padding:1rem;
     font-weight: 600;
 }
+
+.header ul li.active a{
+    background-color: #504e4e;
+    color: white;
+}

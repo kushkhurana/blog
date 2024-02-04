@@ -17,3 +17,7 @@ body,ul{
     max-height: 300px;
     overflow: hidden;
 }
+
+a:visited{
+    color:black;
+}
