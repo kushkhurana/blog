@@ -20,3 +20,14 @@
     background-color: #504e4e;
     color: white;
 }
+
+
+@media screen and (max-width:767px){
+    .header{
+        flex-direction: column;
+    }
+    .header ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}

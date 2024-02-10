@@ -13,3 +13,18 @@
     height:250px;
     object-fit: cover;
 }
+
+@media screen and (max-width:767px){
+    .products{
+        flex-direction: column;
+    }
+    .products .item{
+        width: 100%;
+        margin-right: 0;
+        border: 1px solid #eee6e6;
+    }
+    .products .item h4, .products .item p{
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+}

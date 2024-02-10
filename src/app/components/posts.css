@@ -8,3 +8,18 @@
     margin-right:2rem;
     margin-bottom:2rem;
 }
+
+@media screen and (max-width:767px){
+    .posts{
+        flex-direction: column;
+    }
+    .posts .post-item{
+        width: 100%;
+        margin-right: 0;
+        border: 1px solid #eee6e6;
+    }
+    .posts .post-item h3, .posts .post-item p{
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+}
