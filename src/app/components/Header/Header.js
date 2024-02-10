@@ -11,9 +11,12 @@ const Header = () => {
   const [navOpen,setnavOpen] = useState(false);
   const handleNavClick = (e) => {
     setnavOpen(!navOpen);
-
   }
-  console.log(pathname);
+  const handleLinkFn = () => {
+    if(window.outerWidth < 768){
+        setnavOpen(false);
+    }
+  }
   return (
     <header className={(navOpen) ? 'header open' : 'header'}>
         <h3>Next App</h3>
@@ -22,7 +25,7 @@ const Header = () => {
           {
             headerData.map((item) => {
               return <li className={(pathname === item.path) ? 'active' : ''} key={item.label}>
-                <Link href={item.path}>{item.label}</Link>
+                <Link href={item.path} onClick={handleLinkFn}>{item.label}</Link>
               </li>
             })
           }
