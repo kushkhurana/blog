@@ -1,9 +1,10 @@
 "use client"
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useState } from "react";
 import "./posts.css";
 
 export default function Posts(props){
-  console.log("Posts",props.posts)
+  // console.log("Posts",props.posts)
   const [posts,setPosts] = useState(props.posts);
 
   return (
@@ -11,7 +12,7 @@ export default function Posts(props){
         {
             posts.map((post) => {
                 return <div className="post-item" key={post.id}>
-                    <h3>{post.title}</h3>
+                    <h3><Link href={"/blog/"+post.id}>{post.title}</Link></h3>
                     <p>{post.body}</p>
                 </div>
             })

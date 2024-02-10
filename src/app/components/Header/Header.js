@@ -13,7 +13,7 @@ const Header = () => {
         <ul>
           {
             headerData.map((item) => {
-              return <li className={(item.path === pathname) ? 'active' : ''} key={item.label}>
+              return <li className={(pathname === item.path) ? 'active' : ''} key={item.label}>
                 <Link href={item.path}>{item.label}</Link>
               </li>
             })
